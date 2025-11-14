@@ -150,27 +150,6 @@ ZREBypass/
 - 不得用于非法入侵或破坏
 - 遵守当地法律法规
 
-## 编译选项
-
-### Windows
-```bash
-# 标准编译
-go build -o zrebypass.exe
-
-# 减小体积
-go build -ldflags="-s -w" -o zrebypass.exe
-
-# 隐藏控制台窗口
-go build -ldflags="-s -w -H windowsgui" -o zrebypass.exe
-```
-
-### Linux
-```bash
-go build -o zrebypass
-
-# 静态编译
-CGO_ENABLED=0 go build -ldflags="-s -w" -o zrebypass
-```
 
 ## 开发计划
 
